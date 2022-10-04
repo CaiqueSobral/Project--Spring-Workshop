@@ -2,7 +2,7 @@
 
 This is a project made for practicing with Spring framework, using Java, JPA, local server, SQL, etc.
 
-All used to build a restAPI with Java.
+All used to build a restAPI with Java and more.
 
 ## Authors
 
