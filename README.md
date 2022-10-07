@@ -17,3 +17,4 @@ All used to build a restAPI with Java and more.
 - MySQL
 - JPA
 - Spring
+- Spring Boot
