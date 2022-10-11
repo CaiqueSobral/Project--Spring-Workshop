@@ -1,9 +1,9 @@
 package com.springws.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
-import java.net.PasswordAuthentication;
 import java.time.Instant;
 import java.util.Objects;
 
@@ -23,10 +23,10 @@ public class Payment implements Serializable {
     public Payment() {
     }
 
-    public Payment(Long id, Instant moment, Order oder) {
+    public Payment(Long id, Instant moment, Order order) {
         this.id = id;
         this.moment = moment;
-        this.order = oder;
+        this.order = order;
     }
 
     public Long getId() {
@@ -45,6 +45,7 @@ public class Payment implements Serializable {
         this.moment = moment;
     }
 
+    @JsonIgnore
     public Order getOder() {
         return order;
     }
